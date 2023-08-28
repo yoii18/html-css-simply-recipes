@@ -1,3 +1,4 @@
+/*
 const getElement = (selector) => {
   const element = document.querySelector(selector)
 
@@ -17,3 +18,5 @@ navBtnDOM.addEventListener('click', () => {
 const date = getElement('#date')
 const currentYear = new Date().getFullYear()
 date.textContent = currentYear
+*/
+console.log('hello world')
