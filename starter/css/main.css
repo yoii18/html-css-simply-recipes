@@ -291,6 +291,8 @@ Navbar
   /* background-color: red; */
   display: flex;
   align-items: center;
+  /* align-items: left; */
+  margin-left: 0rem;
 }
 
 .nav-btn{
@@ -334,4 +336,119 @@ Navbar
 .contact-link a{
   padding: 0.15rem 1rem;
 }
+
+@media screen and (min-width: 992px){
+  .nav-btn{
+    display: none;
+  }
+  .navbar{
+    height: 6rem;
+    /* background-color: red; */
+  }
+  .nav-center{
+    display: flex;
+    align-items: center;
+  }
+  .nav-header{
+    height: auto;
+    margin-right: 2rem;
+  }
+  .nav-links{
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    /* background-color: red; */
+  }
+  .nav-link{
+    padding: 0;
+    border-top: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .contact-link{
+    margin-left: auto;
+  }
+}
+
+/*
+=============== 
+Page
+===============
+*/
+.page{
+  /* background-color: red; */
+  height: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 2rem;
+  min-height: calc(100vh - (6rem + 4rem));
+}
+
+/*
+=============== 
+Footer
+===============
+*/
+.page-footer{
+  height: 4rem;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* max-width: var(--max-width); */
+}
+.page-footer p{
+  margin-bottom: 0rem;
+}
+.footer-logo, .page-footer a{
+  color: var(--primary-400);
+}
+
+/*
+=============== 
+Hero/Header
+===============
+*/
+.hero{
+  min-height: 40vh;
+  background: url(../assets/main.jpeg) center/cover no-repeat ;
+  margin-bottom: 2rem;
+  border-radius: var(--borderRadius);
+  position: relative;
+  /* background: red; */
+}
+.hero-container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: var(--borderRadius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-text{
+  text-align: center;
+  color: var(--white);
+}
+@media  screen and (min-width: 768px) {
+  .hero-text h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+  
+}
+
+
+
+/*
+=============== 
+Footer
+===============
+*/
+
 
